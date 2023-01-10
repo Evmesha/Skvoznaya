@@ -1,0 +1,38 @@
+Запуск
+пример:
+java -jar program.jar unziped+uncrypted json NoPttrn NoRegExp C:\test\test.json c:\test\result.json 
+
+Порядок параметров с указанием значения из примера: 
+1. какой тип файла обрабатываем 2 вида (например ziped+crypted, crypted+ziped, unziped+uncrypted). 
+Если используется только один параметр то указываем для только зашифрован > crypted+unziped, для только архивирован > ziped+uncryped. - "unziped+uncrypted"
+2. формат входного файла (txt, json, xml)  - "json"
+3. с паттернами или без (Pttrn, NoPttrn) - "NoPttrn"
+4. с регуляркой или без (RegExp, NoRegExp)- "NoRegExp"
+5. путь и имя входного файла - "C:\test\test.json"
+6. путь и имя выходного файла - "C:\test\result.json"
+
+типы файлов
+ - ziped - архивирован
+ - unziped - неархивирован
+ - crypted - зашифрован
+ - uncrypted - нешифрован
+форматы файлов
+ - txt
+ - xml
+ - json
+прочие параметры
+ - с дизайн паттерном или без (Pttrn/NoPttrn)
+ - с регулярками или без (RegExp/NoRegExp)
+ - путь к исходному файлу
+ - путь к результирующему файлу
+
+
+подготовительные:
+что бы предварительно заархивировать:
+ - zip путь к файлу  (java -jar program.jar zip C:\test\test.json ) - будет создан архив
+что бы предварительно зашифровать:
+ - crypt путь к файлу (java -jar program.jar crypt C:\test\test.json ) - будет создан зашифрованый файл
+
+Компиляция из командной строки командой: 
+mvn clean compile assembly:single -после этого можно запускать из командной строки. 
+
