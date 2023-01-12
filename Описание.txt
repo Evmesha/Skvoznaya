@@ -33,6 +33,3 @@ java -jar program.jar unziped+uncrypted json NoPttrn NoRegExp C:\test\test.json 
 что бы предварительно зашифровать:
  - crypt путь к файлу (java -jar program.jar crypt C:\test\test.json ) - будет создан зашифрованый файл
 
-Компиляция из командной строки командой: 
-mvn clean compile assembly:single -после этого можно запускать из командной строки. 
-
