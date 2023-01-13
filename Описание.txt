@@ -33,3 +33,4 @@ java -jar program.jar unziped+uncrypted json NoPttrn NoRegExp C:\test\test.json 
 что бы предварительно зашифровать:
  - crypt путь к файлу (java -jar program.jar crypt C:\test\test.json ) - будет создан зашифрованый файл
 
+Есть юнит-тесты
